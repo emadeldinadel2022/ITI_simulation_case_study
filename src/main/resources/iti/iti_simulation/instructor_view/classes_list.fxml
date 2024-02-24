@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.student_controller.ClassListController">
+   <children>
+      <Label layoutX="451.0" layoutY="28.0" text="Classes and Scheduling" textFill="DARKRED">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewClasses" layoutX="20.0" layoutY="81.0" prefHeight="232.0" prefWidth="1028.0">
+        <columns>
+          <TableColumn fx:id="colCourseName" prefWidth="146.0" text="Course Name" />
+          <TableColumn fx:id="colInstructorName" prefWidth="146.0" text="Instructor Name" />
+            <TableColumn fx:id="colCourseStartDate" prefWidth="146.0" text="Start Date" />
+            <TableColumn fx:id="colCourseEndDate" prefWidth="146.0" text="End Date" />
+            <TableColumn fx:id="colTestPercent" prefWidth="146.0" text="Test %" />
+            <TableColumn fx:id="colAssignmentPercent" prefWidth="146.0" text="Assignment %" />
+            <TableColumn fx:id="colProjectPercent" prefWidth="146.0" text="Project %" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewSchedule" layoutX="381.0" layoutY="331.0" prefHeight="200.0" prefWidth="648.0">
+        <columns>
+          <TableColumn prefWidth="162.0" text="Course Name" />
+          <TableColumn prefWidth="162.0" text="Day of Week" />
+            <TableColumn prefWidth="162.0" text="Start Time" />
+            <TableColumn prefWidth="162.0" text="End Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="105.0" layoutY="372.0" text="Course Schedule" textFill="DARKRED">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
