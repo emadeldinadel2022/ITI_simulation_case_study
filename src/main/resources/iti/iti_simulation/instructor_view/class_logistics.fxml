@@ -4,43 +4,72 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.instructor_controller.CourseListController">
+<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.instructor_controller.ClassLogisticsController">
    <children>
-      <Label layoutX="398.0" layoutY="14.0" text="Instrucrtor Course List" textFill="DARKRED">
+      <Label layoutX="398.0" layoutY="14.0" text="Instrucrtor Classes List" textFill="DARKRED">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="tableViewMyExpCourses" layoutX="51.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
+      <TableView fx:id="tableViewClassList" layoutX="51.0" layoutY="116.0" prefHeight="198.0" prefWidth="406.0">
         <columns>
-          <TableColumn fx:id="colMyCourseID" prefWidth="118.0" text="Course ID" />
-          <TableColumn fx:id="colMyCourseName" prefWidth="168.0" text="Course Name" />
-            <TableColumn fx:id="colMyExpYears" prefWidth="119.0" text="Exp Years" />
+          <TableColumn fx:id="colClassID" prefWidth="203.0" text="Class ID" />
+          <TableColumn fx:id="colCourseName" prefWidth="203.0" text="Course Name" />
         </columns>
       </TableView>
-      <TableView fx:id="tableViewSysCourses" layoutX="604.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
+      <TableView fx:id="tableViewStudentList" layoutX="604.0" layoutY="116.0" prefHeight="298.0" prefWidth="406.0">
          <columns>
-            <TableColumn fx:id="colCourseID" prefWidth="203.0" text="Course ID" />
-            <TableColumn fx:id="colCourseName" prefWidth="203.0" text="Course Name" />
+            <TableColumn fx:id="colStudentID" prefWidth="203.0" text="Student ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="203.0" text="Student Name" />
          </columns>
       </TableView>
-      <Label layoutX="138.0" layoutY="74.0" text="My Experienced Course" textFill="DARKRED">
+      <Label fx:id="tableOneLabel" layoutX="138.0" layoutY="74.0" prefHeight="26.0" prefWidth="137.0" text="Classes List" textFill="DARKRED">
          <font>
-            <Font size="17.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="710.0" layoutY="74.0" prefHeight="21.0" prefWidth="179.0" text="Courses In System" textFill="DARKRED">
+      <Label layoutX="763.0" layoutY="72.0" prefHeight="21.0" prefWidth="179.0" text="Student List" textFill="DARKRED">
          <font>
-            <Font size="17.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <Button fx:id="bttnAddQul" layoutX="464.0" layoutY="67.0" mnemonicParsing="false" onAction="#addQualification" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Add Course to My List" textFill="#fcf7f7">
+      <Button fx:id="bttnTestGrade" layoutX="318.0" layoutY="70.0" mnemonicParsing="false" onAction="#assignTestGrade" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Assign Test Grade" textFill="#fcf7f7">
          <font>
             <Font name="KacstOne" size="10.0" />
          </font>
       </Button>
+      <Button fx:id="bttnAttend" layoutX="624.0" layoutY="448.0" mnemonicParsing="false" onAction="#attendStudent" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Attend" textFill="#fcf7f7">
+         <font>
+            <Font name="KacstOne" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttnAddQul2" layoutX="828.0" layoutY="450.0" mnemonicParsing="false" onAction="#absentStudent" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Absent" textFill="#fcf7f7">
+         <font>
+            <Font name="KacstOne" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttnAssignment" layoutX="609.0" layoutY="70.0" mnemonicParsing="false" onAction="#showAssignments" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Assignments" textFill="#fcf7f7">
+         <font>
+            <Font name="KacstOne" size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtFieldGrade" layoutX="457.0" layoutY="70.0" prefHeight="35.0" prefWidth="126.0" promptText="assign grade..." />
+      <TableView fx:id="tableViewSchedule" layoutX="39.0" layoutY="349.0" prefHeight="165.0" prefWidth="531.0">
+         <columns>
+            <TableColumn fx:id="colCSchCourseName" prefWidth="118.0" text="Course Name" />
+            <TableColumn fx:id="colCourseDay" prefWidth="102.0" text="Day of Week" />
+            <TableColumn fx:id="colStartTime" prefWidth="157.0" text="Start Time" />
+            <TableColumn fx:id="colEndTime" prefWidth="153.0" text="End Time" />
+         </columns>
+      </TableView>
+      <Label fx:id="tableOneLabel1" layoutX="145.0" layoutY="323.0" prefHeight="26.0" prefWidth="197.0" text="Classes Schedule" textFill="DARKRED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

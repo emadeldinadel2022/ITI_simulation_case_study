@@ -18,7 +18,7 @@ CREATE TABLE schedule (
 CREATE TABLE attendance (
     student_ssn CHAR(14),
     schedule_id NUMBER,
-    status BOOLEAN,
+    status NUMBER(1),
     CONSTRAINT pk_attendance PRIMARY KEY (student_ssn, schedule_id),
     CONSTRAINT fk_attendance_student FOREIGN KEY (student_ssn) REFERENCES student(student_ssn),
     CONSTRAINT fk_attendance_schedule FOREIGN KEY (schedule_id) REFERENCES schedule(schedule_id)

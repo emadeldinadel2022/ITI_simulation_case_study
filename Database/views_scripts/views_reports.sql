@@ -121,3 +121,32 @@ order by instructor_name;
 select * from avg_grades_per_instructor;
 
 SELECT * FROM student_report;
+
+create or replace view class_view as
+select cl.*, i.instructor_name, c.course_name 
+from class cl
+join instructor i
+on i.instructor_ssn = cl.instructor_ssn
+join course c
+on c.course_code = cl.course_code;
+
+create or replace view schedule_view as
+select c.course_name, sh.*
+from schedule sh
+join class cl
+on cl.class_id = sh.class_id
+join course c
+on c.course_code = cl.course_code;
+
+select * from assignment;
+
+select * from schedule_view;
+
+create or replace view class_student_view as
+select s.student_ssn, s.student_name, cl.*, i.instructor_name, c.course_name
+from student s, class cl, instructor i, course c
+where s.intake_id = cl.intake_id
+and i.instructor_ssn = cl.instructor_ssn
+and cl.course_code = c.course_code;
+
+select * from instructor;

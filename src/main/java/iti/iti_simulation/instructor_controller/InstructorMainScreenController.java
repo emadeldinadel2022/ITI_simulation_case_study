@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainScreenController {
+public class InstructorMainScreenController {
 
     @FXML
     private AnchorPane centerAnchorPane;
@@ -65,16 +65,38 @@ public class MainScreenController {
     private Scene scene;
     private Parent root;
 
+    public void setInstructorName(String instructorName) {
+        this.instructorNameLabel.setText(instructorName);
+    }
+
+    public void setInstructorEmail(String instructorEmail) {
+        this.instructorEmail.setText(instructorEmail);
+    }
+
+    public void setAddress(String address) {
+        this.addressLabel.setText(address);
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumberLabel.setText(phoneNumber);
+    }
+
     public void setViewAnchorPane(AnchorPane viewAnchorPane) {
         this.viewAnchorPane.getChildren().setAll(viewAnchorPane);
     }
 
+    private void loadFXMLView(String fxmlPath) {
+        try {
+            AnchorPane newView = FXMLLoader.load(getClass().getResource(fxmlPath));
+            viewAnchorPane.getChildren().setAll(newView);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @FXML
     void changePassword(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/change_password.fxml"));
-        AnchorPane changePasswordAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(changePasswordAnchorPane);
-
+        loadFXMLView("/iti/iti_simulation/change_password.fxml");
     }
 
     @FXML
@@ -90,50 +112,35 @@ public class MainScreenController {
 
     @FXML
     void showAbout(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/about.fxml"));
-        AnchorPane aboutAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(aboutAnchorPane);
-
+        loadFXMLView("/iti/iti_simulation/about.fxml");
     }
 
     @FXML
     void showClassLogistics(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/instructor_view/class_logistics.fxml"));
-        AnchorPane classLogisticsAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(classLogisticsAnchorPane);
+        loadFXMLView("/iti/iti_simulation/instructor_view/class_logistics.fxml");
 
     }
 
     @FXML
     void showClasses(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/instructor_view/classes_list.fxml"));
-        AnchorPane classesAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(classesAnchorPane);
+        loadFXMLView("/iti/iti_simulation/instructor_view/classes_list.fxml");
 
     }
 
     @FXML
     void showCourses(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/instructor_view/course_list.fxml"));
-        AnchorPane coursesAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(coursesAnchorPane);
-
+        loadFXMLView("/iti/iti_simulation/instructor_view/course_list.fxml");
     }
 
     @FXML
     void showQualifications(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/instructor_view/qualifications.fxml"));
-        AnchorPane qualAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(qualAnchorPane);
+        loadFXMLView("/iti/iti_simulation/instructor_view/qualifications.fxml");
 
     }
 
     @FXML
     void showReport(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/iti/iti_simulation/instructor_view/report.fxml"));
-        AnchorPane reportAnchorPane = loader.load();
-        viewAnchorPane.getChildren().setAll(reportAnchorPane);
-
+        loadFXMLView("/iti/iti_simulation/instructor_view/report.fxml");
     }
 
 }

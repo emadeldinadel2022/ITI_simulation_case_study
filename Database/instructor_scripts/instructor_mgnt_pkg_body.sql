@@ -65,7 +65,7 @@ CREATE OR REPLACE PACKAGE BODY instructor_management_pkg AS
             -- Check if the phone parameter is not null, then update
             phone = NVL(p_phone, phone),
             -- Check if the track_supervision parameter is not null, then update
-            track_id = NVL(p_track_supervision, track_supervision)
+            track_id = NVL(p_track_supervision, track_id)
         WHERE instructor_ssn = p_instructor_ssn;
         
         COMMIT;

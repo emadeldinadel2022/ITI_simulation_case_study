@@ -1,2 +1,7 @@
-package iti.models;public enum Role {
+package iti.models;
+
+public enum Role {
+    STUDENT,
+    INSTRUCTOR,
+    SUPERVISOR
 }

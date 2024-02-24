@@ -26,19 +26,17 @@ END;
 CREATE TABLE assignment_student_grade (
     assignment_id NUMBER,
     student_ssn CHAR(14),
-    grade_code VARCHAR2(3),
+    grade_point NUMBER NOT NULL,
     CONSTRAINT pk_assignment_student_grade PRIMARY KEY (assignment_id, student_ssn),
     CONSTRAINT fk_assignment_grade FOREIGN KEY (assignment_id) REFERENCES assignment(assignment_id),
-    CONSTRAINT fk_student_grade FOREIGN KEY (student_ssn) REFERENCES student(student_ssn),
-    CONSTRAINT fk_student_assign_grade FOREIGN KEY (grade_code) REFERENCES grade(grade_code)
+    CONSTRAINT fk_student_grade FOREIGN KEY (student_ssn) REFERENCES student(student_ssn)
 );
 
 CREATE TABLE class_student_test (
     class_id NUMBER,
     student_ssn CHAR(14),
-    grade_code VARCHAR2(3),
+    grade_point NUMBER NOT NULL,
     CONSTRAINT pk_class_student_test PRIMARY KEY (class_id, student_ssn),
     CONSTRAINT fk_class_test FOREIGN KEY (class_id) REFERENCES class(class_id),
-    CONSTRAINT fk_student_test FOREIGN KEY (student_ssn) REFERENCES student(student_ssn),
-    CONSTRAINT fk_student_test_grade FOREIGN KEY (grade_code) REFERENCES grade(grade_code)
+    CONSTRAINT fk_student_test FOREIGN KEY (student_ssn) REFERENCES student(student_ssn)
 );

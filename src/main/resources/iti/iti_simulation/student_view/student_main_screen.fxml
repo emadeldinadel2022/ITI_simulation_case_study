@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="648.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane prefHeight="648.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.student_controller.MainScreenController">
    <center>
       <AnchorPane fx:id="centerAnchorPane" prefHeight="507.0" prefWidth="1076.0" BorderPane.alignment="CENTER">
          <children>
@@ -67,7 +67,7 @@
                               <Font size="34.0" />
                            </font>
                         </Label>
-                        <Button fx:id="editProfileButton" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: #8B0000;" text="Change Password" textFill="#fcf7f7">
+                        <Button fx:id="changePasswordButton" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="33.0" prefWidth="122.0" style="-fx-background-color: #8B0000;" text="Change Password" textFill="#fcf7f7">
                            <font>
                               <Font name="KacstOne" size="10.0" />
                            </font>
@@ -91,32 +91,32 @@
                   </ImageView>
                </children>
             </HBox>
-            <Button fx:id="aboutButton" layoutX="62.0" layoutY="187.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="About ITI" textFill="#fcf7f7">
+            <Button fx:id="aboutButton" layoutX="62.0" layoutY="187.0" mnemonicParsing="false" onAction="#getAbout" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="About ITI" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="programButton" layoutX="62.0" layoutY="257.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="My Program" textFill="#fcf7f7">
+            <Button fx:id="programButton" layoutX="62.0" layoutY="257.0" mnemonicParsing="false" onAction="#getProgramDetails" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="My Program" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="coursesListButton" layoutX="62.0" layoutY="326.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Course List" textFill="#fcf7f7">
+            <Button fx:id="coursesListButton" layoutX="62.0" layoutY="326.0" mnemonicParsing="false" onAction="#getCourseList" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Course List" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="classesListButton" layoutX="63.0" layoutY="395.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="My Classes" textFill="#fcf7f7">
+            <Button fx:id="classesListButton" layoutX="63.0" layoutY="395.0" mnemonicParsing="false" onAction="#getClassList" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="My Classes" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="reportButton" layoutX="64.0" layoutY="464.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Report" textFill="#fcf7f7">
+            <Button fx:id="reportButton" layoutX="64.0" layoutY="464.0" mnemonicParsing="false" onAction="#showReport" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Report" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>
             </Button>
-            <Button fx:id="logOutButton" layoutX="63.0" layoutY="551.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Log Out" textFill="#fcf7f7">
+            <Button fx:id="logOutButton" layoutX="63.0" layoutY="551.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="57.0" prefWidth="181.0" style="-fx-background-color: #8B0000;" text="Log Out" textFill="#fcf7f7">
                <font>
                   <Font name="KacstOne" size="24.0" />
                </font>

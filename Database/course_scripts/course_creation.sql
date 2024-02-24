@@ -10,8 +10,8 @@ CREATE TABLE course (
     course_code NUMBER PRIMARY KEY,
     course_name VARCHAR2(100) UNIQUE NOT NULL,
     credit_hours NUMBER NOT NULL,
-    course_syllabus CLOB NOT NULL,
-    course_description CLOB NOT NULL
+    course_syllabus VARCHAR2(1000) NOT NULL,
+    course_description VARCHAR2(1000) NOT NULL
 );
 
 CREATE TABLE course_program (
@@ -46,3 +46,44 @@ BEGIN
     :NEW.course_code := course_code_seq.NEXTVAL;
 END;
 
+-- Create Trigger for Insertion
+CREATE OR REPLACE TRIGGER trg_insert_course
+BEFORE INSERT ON course
+FOR EACH ROW
+DECLARE
+    v_course_count NUMBER;
+BEGIN
+    IF :NEW.course_name IS NULL THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Course name cannot be NULL.');
+    END IF;
+
+    SELECT COUNT(*)
+    INTO v_course_count
+    FROM course
+    WHERE course_name = :NEW.course_name;
+
+    IF v_course_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20002, 'Course name must be unique.');
+    END IF;
+END;
+/
+
+-- Create Trigger for Update
+CREATE OR REPLACE TRIGGER trg_update_course
+BEFORE UPDATE OF course_name, credit_hours, course_syllabus, course_description ON course
+FOR EACH ROW
+DECLARE
+    v_course_count NUMBER;
+BEGIN
+
+    SELECT COUNT(*)
+    INTO v_course_count
+    FROM course
+    WHERE course_name = :NEW.course_name
+    AND course_code != :NEW.course_code;
+
+    IF v_course_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20004, 'Course name must be unique.');
+    END IF;
+END;
+/

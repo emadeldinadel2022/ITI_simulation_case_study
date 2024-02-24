@@ -8,11 +8,11 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Qualifications {
+public class QualificationDAO {
 
     private DAO daoInstance;
 
-    public Qualifications(){
+    public QualificationDAO(){
         daoInstance = DAO.initiaDAO();
     }
 
@@ -37,10 +37,11 @@ public class Qualifications {
 
     public List<Qualification> getAllQualificationsNotAssociatedWithInstructor(String instructorSSN) {
         List<Qualification> qualifications = new ArrayList<>();
-        String query = "SELECT qualification_id, qualification_name " +
-                "FROM qualifications " +
-                "WHERE qualification_id NOT IN " +
-                "(SELECT qualification_id FROM instructor_qualification_view WHERE instructor_ssn = ?)";
+        String query = "SELECT DISTINCT qualification_id, qualification_name FROM instructor_qualification_view \n" +
+                "WHERE qualification_id not in(\n" +
+                "        SELECT qualification_id FROM instructor_qualification_view \n" +
+                "        WHERE instructor_ssn = ?\n" +
+                ")";
         try (PreparedStatement statement = daoInstance.getConnection().prepareStatement(query)) {
             statement.setString(1, instructorSSN);
             ResultSet resultSet = statement.executeQuery();

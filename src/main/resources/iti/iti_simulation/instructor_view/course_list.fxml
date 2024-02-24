@@ -7,36 +7,37 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.instructor_controller.QualificationsController">
+<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.instructor_controller.CourseListController">
    <children>
-      <Label layoutX="444.0" layoutY="14.0" text="Qualifications List" textFill="DARKRED">
+      <Label layoutX="398.0" layoutY="14.0" text="Instrucrtor Course List" textFill="DARKRED">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="tableViewMyQual" layoutX="51.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
+      <TableView fx:id="tableViewMyExpCourses" layoutX="51.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
         <columns>
-          <TableColumn fx:id="colQualID" prefWidth="203.0" text="Qualification ID" />
-          <TableColumn fx:id="colQualName" prefWidth="203.0" text="Qualification Name" />
+          <TableColumn fx:id="colMyCourseID" prefWidth="118.0" text="Course ID" />
+          <TableColumn fx:id="colMyCourseName" prefWidth="168.0" text="Course Name" />
+            <TableColumn fx:id="colMyExpYears" prefWidth="119.0" text="Exp Years" />
         </columns>
       </TableView>
-      <TableView fx:id="tableViewSysQual" layoutX="604.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
+      <TableView fx:id="tableViewSysCourses" layoutX="604.0" layoutY="116.0" prefHeight="350.0" prefWidth="406.0">
          <columns>
-            <TableColumn fx:id="colSysQualID" prefWidth="203.0" text="Qualification ID" />
-            <TableColumn fx:id="colSysQualName" prefWidth="203.0" text="Qualification Name" />
+            <TableColumn fx:id="colCourseID" prefWidth="203.0" text="Course ID" />
+            <TableColumn fx:id="colCourseName" prefWidth="203.0" text="Course Name" />
          </columns>
       </TableView>
-      <Label layoutX="138.0" layoutY="74.0" text="Your Qualifications List" textFill="DARKRED">
+      <Label layoutX="138.0" layoutY="74.0" text="My Experienced Course" textFill="DARKRED">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Label layoutX="710.0" layoutY="74.0" text="Qualifications In System" textFill="DARKRED">
+      <Label layoutX="710.0" layoutY="74.0" prefHeight="21.0" prefWidth="179.0" text="Courses In System" textFill="DARKRED">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Button fx:id="bttnAddQul" layoutX="475.0" layoutY="67.0" mnemonicParsing="false" onAction="#addQualification" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #8B0000;" text="Add Qualification" textFill="#fcf7f7">
+      <Button fx:id="bttnAddCourseExp" layoutX="464.0" layoutY="67.0" mnemonicParsing="false" onAction="#addCourseExperience" prefHeight="35.0" prefWidth="126.0" style="-fx-background-color: #8B0000;" text="Add Course to My List" textFill="#fcf7f7">
          <font>
             <Font name="KacstOne" size="10.0" />
          </font>

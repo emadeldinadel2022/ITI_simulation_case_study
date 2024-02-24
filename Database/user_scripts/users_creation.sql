@@ -35,3 +35,6 @@ ADD CONSTRAINT fk_instructor_user
 FOREIGN KEY (user_id)
 REFERENCES users(user_id);
 
+
+
+select * from grade

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="537.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iti.iti_simulation.student_controller.ReportController">
+   <children>
+      <Label layoutX="431.0" layoutY="17.0" text="Student Report" textFill="DARKRED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewStudentReport" layoutX="25.0" layoutY="96.0" prefHeight="413.0" prefWidth="1004.0">
+        <columns>
+          <TableColumn fx:id="colCourseName" prefWidth="146.28" text="Course Name" />
+          <TableColumn fx:id="colInstructorName" prefWidth="146.28" text="Instructor Name" />
+            <TableColumn fx:id="colTestGrade" prefWidth="122.0" text="Test Grade" />
+            <TableColumn fx:id="colProjectGrade" prefWidth="138.0" text="Project Grade" />
+            <TableColumn fx:id="colAssignmentGrade" prefWidth="151.0" text="Assignments Score" />
+            <TableColumn fx:id="colAttendencePercent" prefWidth="118.0" text="Attendence %" />
+            <TableColumn fx:id="colFinalGrade" prefWidth="207.0" text="Final Grade" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
