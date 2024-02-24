@@ -1,31 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca04403-f1c2-405e-b2aa-2a588dbdd5b1" name="Changes" comment="" />
+    <list default="true" id="cca04403-f1c2-405e-b2aa-2a588dbdd5b1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.$finalITIERD.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.$finalUniv.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/Back_up/export_bkp.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/Back_up/privilages_backup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/backupScript.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/disk_space_monitoring_script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/login_monitoring.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/monitoring_script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/underDev/dbconnection_failure.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/underDev/http_error_response.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bash/underDev/network_traffic_monitor_script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case Study Documentation .pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/class_scripts/class_assignment_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/class_scripts/class_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/class_scripts/class_schedule_attendence_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/course_scripts/course_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/course_scripts/course_management_pkg_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/course_scripts/course_mgnt_pkg_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/finalITIERD.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/functions_scripts/calculate_class_final_grade.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/functions_scripts/student_cumulative_grade.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/grade_scripts/grades_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/assignment_grade_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/assignment_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/attendance_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/delete_script.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/schedule_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/helper_scripts/test_insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/instructor_scripts/instructor_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/instructor_scripts/instructor_mgnt_pkg_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/instructor_scripts/instructor_mngt_pkg_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/intake_scripts/instake_pkg_mgnt_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/intake_scripts/intake_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/intake_scripts/intake_pkg_mgnt_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/jobs_qualifications_scripts/jobs_qualifications_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/program_scripts/prgram_pkg_mgnt_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/program_scripts/program_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/program_scripts/program_pkg_mngt_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/schema_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/student_creation/student_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/student_scripts/student_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/student_scripts/student_pkg_mgnt_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/student_scripts/student_pkg_mgnt_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/track_scripts/track_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/track_scripts/track_mgnt_pkg_body.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/track_scripts/track_mgnt_pkg_spec.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/user_scripts/users_creation.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/views_scripts/views_program_coruses.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/views_scripts/views_reports.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/CourseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/InstructorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/IntakeClassDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/QualificationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/ReportDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/SupervisorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/TrackProgramDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/data_access_layer/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/ChangePasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/ControllerHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/DataHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/TableViewHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/TableViewHelperAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/AssignmentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/ClassListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/ClassLogisticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/CourseListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/InstructorMainScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/QualificationsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/instructor_controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/login_controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/student_controller/ClassListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/student_controller/CourseListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/student_controller/MainScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/student_controller/ProgramController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/iti_simulation/student_controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/FinalStudentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/InstructorCourseExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/InstructorCourseReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/IntakeClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Qualification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Report.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Schedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/StudentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Supervisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/ClassService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/InstructorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/iti/services/TrackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/about.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/change_password.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/assignments_view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/class_logistics.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/classes_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/course_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/instructor_main_screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/qualifications.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view/report.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/login_view/login.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/class_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/course_list.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/program.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/report.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/report_dashboard/dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/student_view/student_main_screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/classes_mgnt.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/courses_mgnt.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/job_profiles.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/report.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/students_mgnt.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view/supervisor_main_screen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/login/itilogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/login/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/login/manager.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/login/padlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/mainscreen/540310.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/materials/mainscreen/iti_logo.5b9a0fd125be-300x133.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2bqodU6Q39gT7eV2cP0xXI5ilV3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.DAO.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/home/emadadel/IdeaProjects/iti_simulation/src/main/java/iti/iti_simulation",
+    "last_opened_file_path": "/home/emadadel/IdeaProjects/iti_simulation/src/main/resources/iti/iti_simulation/instructor_view",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/instructor_view" />
+      <recent name="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/supervisor_view" />
+      <recent name="$PROJECT_DIR$/src/main/resources/iti/iti_simulation/login_view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/iti/iti_simulation" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="iti.iti_simulation.Main" />
+      <module name="iti_simulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="iti.iti_simulation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.21-corretto-11.0.21-4caba194b151-fab2e099" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,5 +249,8 @@
       <updated>1706952058786</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
